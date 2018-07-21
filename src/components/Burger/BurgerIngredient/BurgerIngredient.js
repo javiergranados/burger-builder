@@ -7,11 +7,11 @@ const burgerIngredient = props => {
   let ingredient = null
 
   if (props.type) {
-    if (props.type === 'BreadTop') {
+    if (props.type === 'breadTop') {
       ingredient = (
         <div className={classes[props.type]}>
-          <div className={classes.Seeds1} />
-          <div className={classes.Seeds2} />
+          <div className={classes.seeds1} />
+          <div className={classes.seeds2} />
         </div>
       )
     } else {
