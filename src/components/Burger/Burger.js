@@ -7,11 +7,11 @@ import BurgerIngredient from './BurgerIngredient/BurgerIngredient'
 const burger = () => {
   return (
     <div className={classes.Burger}>
-      <BurgerIngredient type='BreadTop' />
-      <BurgerIngredient type='Salad' />
-      <BurgerIngredient type='Cheese' />
-      <BurgerIngredient type='Meat' />
-      <BurgerIngredient type='BreadBottom' />
+      <BurgerIngredient type='breadTop' />
+      <BurgerIngredient type='salad' />
+      <BurgerIngredient type='cheese' />
+      <BurgerIngredient type='meat' />
+      <BurgerIngredient type='breadBottom' />
     </div>
   )
 }
