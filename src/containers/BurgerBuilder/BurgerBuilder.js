@@ -8,18 +8,27 @@ import BuildControls from '../../components/Burger/BuildControls/BuildControls'
 class BurgerBuilder extends Component {
   state = {
     ingredients: {
-      bacon: 2,
-      salad: 1,
-      cheese: 1,
+      bacon: 0,
+      salad: 0,
+      cheese: 0,
       meat: 1
     }
+  }
+
+  addIngredientHandler = type => {
+    const ingredientAmountUpdated = {[type]: this.state.ingredients[type] + 1}
+    const ingredientsUpdated = Object.assign({}, this.state.ingredients, ingredientAmountUpdated)
+
+    this.setState({ingredients: ingredientsUpdated})
   }
 
   render () {
     return (
       <Aux>
         <Burger ingredients={this.state.ingredients} />
-        <BuildControls />
+        <BuildControls
+          addIngredient={this.addIngredientHandler}
+        />
       </Aux>
     )
   }
