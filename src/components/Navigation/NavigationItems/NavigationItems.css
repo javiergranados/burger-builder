@@ -1,8 +1,17 @@
+/* Mobile styles */
 .navigationItems {
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-flow: column;
   align-items: center;
   height: 100%;
+}
+
+/* Desktop stkyles */
+@media (min-width: 500px){
+  .navigationItems {
+    flex-flow: row;
+  }
 }

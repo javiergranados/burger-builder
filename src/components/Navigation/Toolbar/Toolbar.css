@@ -16,3 +16,14 @@
 .toolbar nav {
   height: 100%;
 }
+
+.logo {
+  height: 80%;
+}
+
+/* Mobile styles */
+@media (max-width: 499px){
+  .desktopOnly {
+    display: none;
+  }
+}
